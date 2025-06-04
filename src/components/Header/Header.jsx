@@ -1,6 +1,8 @@
 "use client";
 
 import Link from "next/link";
+import { BsSun, BsMoon } from "react-icons/bs";
+
 import { useState } from "react";
 
 export default function Header() {
@@ -11,7 +13,7 @@ export default function Header() {
     document.documentElement.classList.toggle("dark");
   };
   return (
-    <nav className="space-x-4  p-4 flex  justify-left items-center bg-black">
+    <nav className="space-x-4  p-4 flex  justify-left items-center text-black dark:text-white bg-white dark:bg-black">
       <Link href="/" className="text-xl font-semibold">
         Welly Aguiar
       </Link>
@@ -19,10 +21,10 @@ export default function Header() {
       <Link href="#about">Sobre</Link>
       <Link href="#contact">Contato</Link>
       <button
-        className="p-2 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600"
+        className="p-0  rounded-full hover:scale-110"
         onClick={toggleTheme}
       >
-        {isDark ? "Light" : "Dark"}
+  {isDark ? <BsMoon className="text-3xl text-neutral-900 hover:text-blue-500 hover:cursor-pointer" /> : <BsSun className="text-2xl text-neutral-300 hover:text-yellow-500 hover:curson-pointer" />}
       </button>
     </nav>
   );

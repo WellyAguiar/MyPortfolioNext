@@ -1,4 +1,6 @@
-import { Mail, Github, Linkedin } from "lucide-react";
+import { BsEnvelopeFill, BsGithub, BsLinkedin } from "react-icons/bs";
+
+
 
 export default function Contact() {
   const iconStyle =
@@ -9,7 +11,7 @@ export default function Contact() {
       <h2 className="text-3xl font-bold mb-6 text-white">Contato</h2>
       <div className="flex space-x-6">
         <a href="mailto:wellyagui@gmail.com" aria-label="Email">
-          <Mail class={iconStyle} />
+          <BsEnvelopeFill className={iconStyle} />
         </a>
         <a
           href="https://github.com/WellyAguiar"
@@ -17,7 +19,7 @@ export default function Contact() {
           rel="noopener noreferrer"
           aria-label="GitHub"
         >
-          <Github class={iconStyle} />
+          <BsGithub className={iconStyle} />
         </a>
         <a
           href="https://www.linkedin.com/in/welly-aguiar/"
@@ -25,7 +27,7 @@ export default function Contact() {
           rel="noopener noreferrer"
           aria-label="LinkedIn"
         >
-          <Linkedin class={iconStyle} />
+          <BsLinkedin className={iconStyle} />
         </a>
       </div>
     </section>
