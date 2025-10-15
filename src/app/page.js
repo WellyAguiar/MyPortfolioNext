@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="min-h-screen bg-neutral-300 dark:bg-neutral-900 text-gray-900 dark:text-neutral-300">
+      <main className="min-h-screen bg-white dark:bg-violet-950/20 text-black dark:text-neutral-400">
         <About />
         <Tecnologies />
         <Projects />
