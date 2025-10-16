@@ -16,7 +16,7 @@ export default function Stack() {
               {tools.map((tool, i) => (
                 <li
                   key={i}
-                  className="px-3 py-1 bg-black text-white rounded-full text-md"
+                  className="px-3 py-1 bg-black dark:bg-cyan-950 text-white rounded-full text-md"
                 >
                   {tool}
                 </li>
