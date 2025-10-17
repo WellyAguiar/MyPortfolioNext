@@ -10,7 +10,7 @@ export default function About() {
             <h2 className="text-3xl font-bold mb-4 text-foreground">
               Olá, eu sou Welly Aguiar!
             </h2>
-            <p className="text-lg mp-4 text-secondary">
+            <p className="text-lg mp-4 text-foreground">
               Sou um estudante apaixonado por jogos e tecnologia, sonhando em me
               tornar um desenvolvedor cada vez mais competente. Além de ser um
               autodidata, sou um excelente comunicador e possuo um bom humor
@@ -24,7 +24,7 @@ export default function About() {
               <img
                 src="/profilepic.jpg"
                 alt="Welly Aguiar"
-                className="w-full h-full rounded-full object-cover border-8 border-terciary transition-transform duration-500 hover:scale-105 hover:cursor-pointer"
+                className="w-full h-full rounded-full object-cover border-8 border-secondary transition-transform duration-500 hover:scale-105 hover:cursor-pointer"
               />
             </a>
           </div>

@@ -17,9 +17,9 @@ module.exports = {
           DEFAULT:'rgb(var(--primary) / <alpha-value>)',
           foreground:'rgb(var(--primary-foreground) / <alpha-value>)',
         },
-        terciary: {
-          DEFAULT:'rgb(var(--terciary) / <alpha-value>)',
-          foreground:'rgb(var(--terciary-foreground) / <alpha-value>)',
+        secondary: {
+          DEFAULT:'rgb(var(--secondary) / <alpha-value>)',
+          foreground:'rgb(var(--secondary-foreground) / <alpha-value>)',
         },
 
       },
