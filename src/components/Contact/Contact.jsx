@@ -4,11 +4,11 @@ import { BsEnvelopeFill, BsGithub, BsLinkedin } from "react-icons/bs";
 
 export default function Contact() {
   const iconStyle =
-    "w-6 h-6 text-foreground hover:text-primary hover:scale-110 transition-transform duration-200";
+    "w-6 h-6 text-color-brand hover:text-color-brand-strong hover:scale-110 transition-transform duration-200";
 
   return (
-    <section id="contact" className="p-8 bg-background ">
-      <h2 className="text-3xl font-bold mb-6 text-foreground">Contato</h2>
+    <section id="contact" className="p-8 bg-color-surface ">
+      <h2 className="text-3xl font-bold mb-6 text-color-text">Contato</h2>
       <div className="flex space-x-6">
         <a href="mailto:wellyagui@gmail.com" aria-label="Email">
           <BsEnvelopeFill className={iconStyle} />
