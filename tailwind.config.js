@@ -9,22 +9,19 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: 'rgb(var(--background) / <alpha-value>)',
-        foreground: 'rgb(var(--foreground) / <alpha-value>)',
-        card: 'rgb(var(--card) / <alpha-value>)',
-        secondary: 'rgb(var(--secondary) / <alpha-value>)',
-        primary: {
-          DEFAULT:'rgb(var(--primary) / <alpha-value>)',
-          foreground:'rgb(var(--primary-foreground) / <alpha-value>)',
-        },
-        secondary: {
-          DEFAULT:'rgb(var(--secondary) / <alpha-value>)',
-          foreground:'rgb(var(--secondary-foreground) / <alpha-value>)',
-        },
+        'color-bg': 'var(--color-bg)',
+        'color-surface': 'var(--color-surface)',
+        'color-surface-2': 'var(--color-surface-2)',
+        'color-border': 'var(--color-border)',
 
+        'color-text': 'var(--color-text)',
+        'color-text-muted': 'var(--color-text-muted)',
+        'color-text-inverse': 'var(--color-text-inverse)',
+
+        'color-brand': 'var(--color-brand)',
+        'color-brand-strong': 'var(--color-brand-strong)',
       },
     },
   },
   plugins: [],
 }
-
