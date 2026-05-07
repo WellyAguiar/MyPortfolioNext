@@ -6,36 +6,43 @@
   :root {
     --headerheight: 4rem;
 
-    --color-bg: hsl(0 0% 98%);
-    --color-surface: hsl(0 0% 100%);
-    --color-surface-2: hsl(0 0% 94%);
-    --color-border: hsl(220 15% 85%);
+    /* Canais HSL: permite usar opacidade no Tailwind como 'bg-brand/50' */
+    --bg-ch: 0 0% 98%;
+    --surface-ch: 0 0% 100%;
+    --surface-2-ch: 0 0% 95%;
+    --border-ch: 220 15% 85%;
+    --text-ch: 220 15% 20%;
+    --text-muted-ch: 220 10% 45%;
+    --brand-ch: 262 70% 50%;
+    --brand-strong-ch: 262 70% 40%;
 
-    --color-text: hsl(220 15% 20%);
-    --color-text-muted: hsl(220 10% 40%);
-    --color-text-inverse: hsl(0 0% 100%);
-
-    --color-brand: hsl(262 70% 50%);
-    --color-brand-strong: hsl(262 70% 40%);
+    /* Variáveis montadas para uso direto no CSS se necessário */
+    --bg: hsl(var(--bg-ch));
+    --surface: hsl(var(--surface-ch));
+    --surface-2: hsl(var(--surface-2-ch));
+    --border: hsl(var(--border-ch));
+    --text: hsl(var(--text-ch));
+    --text-muted: hsl(var(--text-muted-ch));
+    --brand: hsl(var(--brand-ch));
   }
 
   .dark {
-    --color-bg: hsl(260 20% 8%);
-    --color-surface: hsl(260 20% 12%);
-    --color-surface-2: hsl(220 15% 16%);
-    --color-border: hsl(220 15% 22%);
+    /* No dark mode, o fundo deve ser o mais escuro, e as superfícies levemente mais claras */
+    --bg-ch: 260 20% 8%;         /* Fundo bem profundo */
+    --surface-ch: 260 20% 12%;    /* Card nível 1 (mais claro que o fundo) */
+    --surface-2-ch: 260 20% 16%;  /* Card nível 2 ou hover (mais claro ainda) */
+    --border-ch: 260 20% 18%;
 
-    --color-text: hsl(0 0% 95%);
-    --color-text-muted: hsl(0 0% 70%);
-    --color-text-inverse: hsl(220 15% 10%);
+    --text-ch: 0 0% 95%;
+    --text-muted-ch: 0 0% 70%;
 
-    --color-brand: hsl(262 70% 60%);
-    --color-brand-strong: hsl(262 70% 50%);
+    --brand-ch: 262 70% 60%;      /* No dark mode, a cor brand ganha um pouco mais de luz */
+    --brand-strong-ch: 262 70% 70%;
   }
 
   body {
-    background-color: var(--color-bg);
-    color: var(--color-text);
+    background-color: var(--bg);
+    color: var(--text);
     font-family: Arial, Helvetica, sans-serif;
   }
 

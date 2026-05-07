@@ -9,17 +9,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'color-bg': 'var(--color-bg)',
-        'color-surface': 'var(--color-surface)',
-        'color-surface-2': 'var(--color-surface-2)',
-        'color-border': 'var(--color-border)',
+        'color-bg': 'hsl(var(--bg-ch) / <alpha-value>)',
+        'color-surface': 'hsl(var(--surface-ch) / <alpha-value>)',
+        'color-surface-2': 'hsl(var(--surface-2-ch) / <alpha-value>)',
+        'color-border': 'hsl(var(--border-ch) / <alpha-value>)',
 
-        'color-text': 'var(--color-text)',
-        'color-text-muted': 'var(--color-text-muted)',
-        'color-text-inverse': 'var(--color-text-inverse)',
+        'color-text': 'hsl(var(--text-ch) / <alpha-value>)',
+        'color-text-muted': 'hsl(var(--text-muted-ch) / <alpha-value>)',
 
-        'color-brand': 'var(--color-brand)',
-        'color-brand-strong': 'var(--color-brand-strong)',
+        'color-brand': 'hsl(var(--brand-ch) / <alpha-value>)',
+        'color-brand-strong': 'hsl(var(--brand-strong-ch) / <alpha-value>)',
       },
     },
   },
