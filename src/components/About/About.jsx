@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function About() {
   return (
     <section
@@ -16,12 +18,14 @@ Especializado em React, Next.js e Node.js, com foco em código limpo, organizaç
 Busco criar aplicações bem estruturadas que resolvem problemas reais com eficiência.
             </p>
           </div>
-          <div className="relative w-64 h-64 md:w-80  md:h-80 rounded-full overflow-hidden group order-1 md:order-2">
-            <a href="https://www.linkedin.com/in/welly-aguiar/" target="_blank">
-              <img
+          <div className="relative w-64 h-64 md:w-80  md:h-80 rounded-full overflow-hidden group order-1 md:order-2 border-8 border-color-border">
+            <a href="https://www.linkedin.com/in/welly-aguiar/" target="_blank" className="block w-full h-full">
+              <Image
                 src="/profilepic.jpg"
                 alt="Welly Aguiar"
-                className="w-full h-full rounded-full object-cover border-8 border-color-border transition-transform duration-500 hover:scale-105 hover:cursor-pointer"
+                fill
+                priority
+                className="object-cover transition-transform duration-500 hover:scale-105 hover:cursor-pointer"
               />
             </a>
           </div>
