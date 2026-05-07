@@ -3,7 +3,7 @@ import Projects from "@/components/Projects/Projects";
 import About from "@/components/About/About";
 import Contact from "@/components/Contact/Contact";
 import Stack from "@/components/Stack/Stack";
-import "@/styles/globals.css";
+import "@/app/globals.css";
 import Header from "@/components/Header/Header";
 
 export default function Home() {

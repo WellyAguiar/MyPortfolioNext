@@ -10,7 +10,7 @@ export default function About() {
             <h2 className="text-3xl font-bold mb-4 text-color-brand">
               Olá, eu sou Welly Aguiar!
             </h2>
-            <p className="text-lg mp-4 text-color-text">
+            <p className="text-lg mb-4 text-color-text">
               Desenvolvedor Fullstack e estudante de Engenharia de Software.
 Especializado em React, Next.js e Node.js, com foco em código limpo, organização e entrega consistente.
 Busco criar aplicações bem estruturadas que resolvem problemas reais com eficiência.

@@ -1,32 +1,45 @@
-@import "tailwindcss";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --headerheight: 4rem;
+
+    --color-bg: hsl(0 0% 98%);
+    --color-surface: hsl(0 0% 100%);
+    --color-surface-2: hsl(0 0% 94%);
+    --color-border: hsl(220 15% 85%);
+
+    --color-text: hsl(220 15% 20%);
+    --color-text-muted: hsl(220 10% 40%);
+    --color-text-inverse: hsl(0 0% 100%);
+
+    --color-brand: hsl(262 70% 50%);
+    --color-brand-strong: hsl(262 70% 40%);
   }
-}
 
-@custom-variant dark (&:where(.dark, .dark *));
+  .dark {
+    --color-bg: hsl(260 20% 8%);
+    --color-surface: hsl(260 20% 12%);
+    --color-surface-2: hsl(220 15% 16%);
+    --color-border: hsl(220 15% 22%);
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    --color-text: hsl(0 0% 95%);
+    --color-text-muted: hsl(0 0% 70%);
+    --color-text-inverse: hsl(220 15% 10%);
+
+    --color-brand: hsl(262 70% 60%);
+    --color-brand-strong: hsl(262 70% 50%);
+  }
+
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
 }
