@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { BsSun, BsMoon } from "react-icons/bs";
+import { Sun, Moon } from "lucide-react";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 
@@ -58,9 +58,9 @@ export default function Header() {
         aria-label="Alternar tema"
       >
         {resolvedTheme === "dark" ? (
-          <BsMoon className="text-2xl text-color-brand" />
+          <Moon className="w-6 h-6 text-color-brand" />
         ) : (
-          <BsSun className="text-2xl hover:text-color-brand" />
+          <Sun className="w-6 h-6 hover:text-color-brand" />
         )}
       </button>
     </nav>
