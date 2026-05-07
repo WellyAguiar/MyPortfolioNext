@@ -35,12 +35,13 @@ export default function About() {
             <div className="absolute inset-0 bg-color-brand/20 rounded-full blur-3xl animate-pulse"></div>
             
             <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-color-brand/30 p-2 bg-color-surface-2/50 backdrop-blur-sm shadow-2xl shadow-color-brand/10">
-              <a href="https://www.linkedin.com/in/welly-aguiar/" target="_blank" className="block w-full h-full rounded-full overflow-hidden">
+              <a href="https://www.linkedin.com/in/welly-aguiar/" target="_blank" className="relative block w-full h-full rounded-full overflow-hidden">
                 <Image
                   src="/profilepic.jpg"
                   alt="Welly Aguiar"
                   fill
                   priority
+                  sizes="(max-width: 768px) 256px, 320px"
                   className="object-cover transition-transform duration-700 hover:scale-110"
                 />
               </a>
