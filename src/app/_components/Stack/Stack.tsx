@@ -1,11 +1,11 @@
-import { stackData } from "@/data/stack";
-import SectionTitle from "../SectionTitle";
+import { stackData } from "../../logic/stack";
+import SectionTitle from "../../../components/SectionTitle";
 
 export default function Stack() {
   return (
-    <section id="stack" className="p-8 bg-gradient-to-b from-color-surface to-color-bg min-h-[calc(100dvh-var(--headerheight))] scroll-mt-[var(--headerheight)] flex flex-col justify-center items-center relative overflow-hidden">
-      {/* Círculo decorativo de fundo para dar profundidade */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-color-brand/10 rounded-full blur-[120px] -z-10"></div>
+    <section id="stack" className="p-8 bg-color-bg min-h-[calc(100dvh-var(--headerheight))] scroll-mt-[var(--headerheight)] flex flex-col justify-center items-center relative overflow-hidden">
+      {/* Glow de destaque para o 'Dark Core' */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-color-brand/10 rounded-full blur-[120px] -z-10"></div>
       
       <SectionTitle>Minha stack</SectionTitle>
       

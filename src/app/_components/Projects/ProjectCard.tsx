@@ -1,6 +1,7 @@
 import { Code } from "lucide-react";
+import { Project } from "../../../types";
 
-export default function ProjectCard({ project }) {
+export default function ProjectCard({ project }: { project: Project }) {
   return (
     <li className="group p-6 border border-color-border/50 rounded-2xl bg-color-surface/40 backdrop-blur-md shadow-lg transition-all duration-500 hover:shadow-color-brand/20 hover:shadow-2xl hover:-translate-y-2 hover:border-color-brand/50 flex flex-col justify-between h-full">
       <div>

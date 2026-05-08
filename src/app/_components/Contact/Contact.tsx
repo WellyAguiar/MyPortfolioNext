@@ -9,7 +9,7 @@ export default function Contact() {
   ];
 
   return (
-    <section id="contact" className="py-20 px-8 bg-gradient-to-t from-color-surface to-color-bg flex flex-col items-center justify-center relative">
+    <section id="contact" className="py-20 px-8 bg-gradient-to-b from-color-bg to-color-surface flex flex-col items-center justify-center relative">
       <div className="max-w-2xl w-full text-center">
         <SectionTitle>Vamos conversar?</SectionTitle>
         <p className="text-color-text-muted text-lg mb-10 max-w-md mx-auto">

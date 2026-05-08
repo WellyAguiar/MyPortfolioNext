@@ -4,7 +4,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="min-h-screen flex flex-col md:flex-row items-center justify-center p-8 gap-8 bg-gradient-to-b from-color-bg via-color-bg to-color-surface"
+      className="min-h-screen flex flex-col md:flex-row items-center justify-center p-8 gap-8 bg-gradient-to-b from-color-surface via-color-bg to-color-bg"
     >
       <div className="md:mx-8 mx-4 md:max-w-4xl w-full">
         <div className="flex flex-col md:flex-row items-center gap-12">

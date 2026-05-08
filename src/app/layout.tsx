@@ -1,7 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "@/app/globals.css";
-import Header from "@/components/Header/Header";
-import { Providers } from "@/components/Providers";
+import Header from "./_components/Header/Header";
+import { Providers } from "./_components/Providers";
+import { Metadata } from "next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,7 +14,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Welly Aguiar | Desenvolvedor Fullstack",
   description: "Portfólio de Welly Aguiar, desenvolvedor Fullstack especializado em React, Next.js e Node.js. Estudante de Engenharia de Software focado em soluções eficientes.",
   keywords: ["Desenvolvedor Fullstack", "React", "Next.js", "Node.js", "Engenharia de Software", "Welly Aguiar"],
@@ -33,7 +34,11 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="pt-BR" suppressHydrationWarning>
       <body
