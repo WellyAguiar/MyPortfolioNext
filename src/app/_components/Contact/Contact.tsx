@@ -1,5 +1,5 @@
 import { Mail, Github, Linkedin } from "lucide-react";
-import SectionTitle from "../SectionTitle";
+import SectionTitle from "@/components/SectionTitle";
 
 export default function Contact() {
   const socialLinks = [

@@ -1,5 +1,5 @@
 import { Code } from "lucide-react";
-import { Project } from "../../../types";
+import { Project } from "@/types";
 
 export default function ProjectCard({ project }: { project: Project }) {
   return (

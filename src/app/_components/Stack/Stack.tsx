@@ -1,5 +1,5 @@
-import { stackData } from "../../logic/stack";
-import SectionTitle from "../../../components/SectionTitle";
+import { stackData } from "@/logic/stack";
+import SectionTitle from "@/components/SectionTitle";
 
 export default function Stack() {
   return (

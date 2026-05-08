@@ -1,6 +1,6 @@
-import { projectsData } from "../../logic/projects";
+import { projectsData } from "@/logic/projects";
 import ProjectCard from "./ProjectCard";
-import SectionTitle from "../../../components/SectionTitle";
+import SectionTitle from "@/components/SectionTitle";
 
 export default function Projects() {
   return (
